@@ -21,3 +21,23 @@ app.get('/users/:userId', function (req, res) {
 })
 
 app.listen(3000)
+
+// let result = [];
+
+// app.get('/library', function (req, res) {
+//     const utga = req.query.category;
+//     const readFile = util.promisify(fs.readFile);
+//     readFile('./foods.json')
+//         .then((text) => {
+//             const data = JSON.parse(text.toString("utf8"));
+//             data.map((dt) => {
+//                 if (dt.category.includes(utga)) {
+//                     result.push(dt)
+//                 }              
+//             });
+//             res.send(result)          
+//         })
+//         .catch((err) => {console.log("Error", err);})
+// })
+
+app.listen(3000)
