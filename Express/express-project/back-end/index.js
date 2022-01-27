@@ -3,8 +3,7 @@ const fs = require('fs')
 const util = require('util')
 const cors = require('cors')
 const app = express();
-let result = [];
-app.use(express.static('public'))
+app.use( '/static' , express.static('public'))
 
 
 var corsOption = {
