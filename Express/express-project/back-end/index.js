@@ -4,6 +4,8 @@ const util = require('util')
 const cors = require('cors')
 const app = express();
 let result = [];
+app.use(express.static('public'))
+
 
 var corsOption = {
     origin: "*",
