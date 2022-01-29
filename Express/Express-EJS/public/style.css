@@ -1,0 +1,31 @@
+/* body {
+    text-align: center; 
+    padding-top: 300px;
+    background-color: bisque;
+} */
+
+h1 {
+    font-size: 2.5rem;
+}
+
+img {
+    width: 300px;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    bottom: 0;
+    padding-top: 50px;
+    background-color: rgb(137, 172, 173);
+}
+
+.quotes {
+    padding-top: 200px;
+}
+
+.quote {
+    padding-top: 200px;
+}
+
