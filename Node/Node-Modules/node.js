@@ -1,5 +1,5 @@
 let initialMemory = process.memoryUsage().heapUsed;
-let word = null;
+let word = process.argv[2]
 
 console.log(word)
 
