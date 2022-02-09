@@ -17,3 +17,8 @@ console.log(path.resolve('joe.txt'));
 console.log(path.resolve('tmp', 'joe.txt'));
 
 console.log(path.normalize('/users/joe/..//test.txt'));
+
+
+// path __dirname
+const dir = __dirname;
+console.log(__dirname);
