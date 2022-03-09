@@ -9,7 +9,15 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "../views"));
 app.set("view options", { layout: false });
 
-app.get('/', (req, res) => {
+const validate = () => {
+    return [
+        body("title").not().isEmpty(),
+        body("subtitle").not().isEmpty(),
+        body("isbn").isNumeric().isLength(10)
+    ]
+}
+
+app.post('/', (req, res) => {
     res.render('add')
 })
 
