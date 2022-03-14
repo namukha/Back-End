@@ -10,11 +10,11 @@ const createfood = () => {
         .withMessage("Price Empty!"),
     body("discount")
         .isNumeric()
-        .islength({min: 0, max: 100})
+        .isLength({min: 0, max: 100})
         .withMessage("0-100% sale possible;"),
     body("stock")
         .isNumeric()
-        .islength({min: 0})
+        .isLength({min: 0})
         .withMessage("Can't be less than 0"),
     body("category_id")
         .isNumeric()
