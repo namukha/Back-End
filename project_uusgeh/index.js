@@ -3,11 +3,13 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const apiRoutes = require('./routes/api');
+const adminRoutes = require('./routes/admin')
 const connection = require('./database')
 
 app.use(express.json());
 app.use(express.static('public'));
 app.use('/', apiRoutes)
+app.use('/admin', adminRoutes)
 
 app.all('*', (req, res, next) => {
   res.status(404).json({
